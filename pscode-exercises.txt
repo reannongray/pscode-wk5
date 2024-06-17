@@ -1,0 +1,88 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+a + b = c
+
+num1 + num2 = sum
+print sum
+
+ask for 2 numbers 
+add the 2 number together 
+print on the screen the sum of those 2 numbers
+
+
+
+// Exercise 2: Check if a Number is Even or Odd
+
+START
+  Prompt user to enter a number
+  PRINT "Enter a number: "
+  INPUT num
+
+ Check if the number is even or odd
+  IF num MOD 2 == 0 THEN
+    PRINT num, " is even."
+  ELSE
+    PRINT num, " is odd."
+  END IF
+END
+
+
+
+// Exercise 3: 
+Write pseudo code that will perform the following.    
+a) Read in 5 separate numbers.   
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+
+START
+Prompt user to enter five numbers
+  PRINT "Enter five numbers, each followed by Enter: "
+  INPUT num1
+  INPUT num2
+  INPUT num3
+  INPUT num4
+  INPUT num5
+
+  Calculate the average
+  SET sum TO num1 + num2 + num3 + num4 + num5
+  SET average TO sum / 5
+
+  Find the minimum and maximum
+  SET min TO num1
+  SET max TO num1
+
+  IF num2 < min THEN
+    SET min TO num2
+  END IF
+  IF num3 < min THEN
+    SET min TO num3
+  END IF
+  IF num4 < min THEN
+    SET min TO num4
+  END IF
+  IF num5 < min THEN
+    SET min TO num5
+  END IF
+
+  IF num2 > max THEN
+    SET max TO num2
+  END IF
+  IF num3 > max THEN
+    SET max TO num3
+  END IF
+  IF num4 > max THEN
+    SET max TO num4
+  END IF
+  IF num5 > max THEN
+    SET max TO num5
+  END IF
+
+  Output results
+  PRINT "Average of the five numbers is: ", average
+  PRINT "Smallest number is: ", min
+  PRINT "Largest number is: ", max
+END
+
+-- END --
